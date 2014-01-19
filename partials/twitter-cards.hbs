@@ -1,0 +1,12 @@
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@felipernb">
+<meta name="twitter:creator" content="@felipernb">
+{{#if post}}
+{{#post}}
+    <meta property="twitter:title" content="{{title}}"/>
+    <meta property="twitter:description" content="{{excerpt}}" />
+{{/post}}
+{{else}}
+    <meta property="twitter:title" content="{{meta_title}}"/>
+    <meta property="twitter:description" content="{{@blog.description}}" />
+{{/if}}
