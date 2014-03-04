@@ -1,8 +1,8 @@
 <meta property="og:site_name" content="{{meta_title}}"/>
+<meta property="og:title" content="{{meta_title}}"/>
 {{#if post}}
 {{#post}}
 	<meta property="og:type" content="article"/>
-	<meta property="og:title" content="{{title}}"/>
 	<meta property="og:url" content="{{url absolute="true"}}"/>
 	<meta property="og:description" content="{{excerpt}}" />
 	<meta property="article:author" content="https://www.facebook.com/felipernb" />
@@ -10,7 +10,6 @@
 {{/post}}
 {{else}}
 	<meta property="og:type" content="website"/>
-	<meta property="og:title" content="{{meta_title}}"/>
 	<meta property="og:url" content="{{@blog.url}}"/>
 	<meta property="og:image" content="{{@blog.url}}{{@blog.logo}}"/>
 	<meta property="og:description" content="{{@blog.description}}" />
